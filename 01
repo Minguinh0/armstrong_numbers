@@ -1,0 +1,13 @@
+given_number = input("Please enter a positive number: ").strip()
+sum = 0
+
+if given_number.isdigit() and int(given_number) > 0:
+    for digit in given_number:
+        sum += int(digit) ** len(given_number)
+
+    if sum == int(given_number):
+        print(f"{given_number} is an Armstrong Number")
+    else:
+        print(f"{given_number} is not an Armstrong Number")
+else:
+    print("It is an invalid entry. Don't use non-numeric, float, or negative values!")
