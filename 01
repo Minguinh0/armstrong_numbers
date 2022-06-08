@@ -1,3 +1,5 @@
+# Find out if a given number is an "Armstrong Number".
+
 given_number = input("Please enter a positive number: ").strip()
 sum = 0
 
